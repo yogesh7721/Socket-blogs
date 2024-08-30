@@ -13,6 +13,10 @@ const blogSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    hero: {
+        type: String,
+        required: true
+    },
     complete: {
         type: Boolean,
         default: false,
