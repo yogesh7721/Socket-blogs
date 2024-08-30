@@ -12,7 +12,8 @@ app.use(cors({
     origin: true,
     credentials: true
 }))
-// app.use(express.static("dist"))
+
+app.use(express.static("dist"))
 app.use("/api/notes", require("./routes/blog.routes"))
 app.use("*", (req, res) => {
 
