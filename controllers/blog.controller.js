@@ -7,6 +7,7 @@ const Blog = require("../model/Blog")
 
 
 exports.getAllBlog = asyncHandler(async (req, res) => {
+
     const result = await Blog.find()
     res.json({ message: "Blog fetch succes", result })
 })
